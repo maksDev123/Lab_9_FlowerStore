@@ -18,11 +18,11 @@ public class UserControler{
 		this.UserService = UserService;
 	}
 
-    @GetMapping("api/v1/flower")
+    @GetMapping("api/users")
 	public java.util.List<AppUser> hello(){
 		return UserService.findAll();
 	}
-	@PostMapping("api/v1/flower")
+	@PostMapping("api/add_user")
 	public AppUser save(@RequestBody AppUser flower){
 		return UserService.save(flower);
 	}
