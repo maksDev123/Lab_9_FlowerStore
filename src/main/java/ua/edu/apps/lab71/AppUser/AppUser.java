@@ -19,8 +19,6 @@ public class AppUser {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private int age = 20;
-
     @Column(unique = true)
     private String email;
 

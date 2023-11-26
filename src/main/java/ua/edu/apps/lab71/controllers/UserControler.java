@@ -23,7 +23,7 @@ public class UserControler{
 		return UserService.findAll();
 	}
 	@PostMapping("api/add_user")
-	public AppUser save(@RequestBody AppUser flower){
-		return UserService.save(flower);
+	public AppUser save(@RequestBody AppUser user){
+		return UserService.save(user);
 	}
 }
